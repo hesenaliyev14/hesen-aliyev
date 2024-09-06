@@ -1,10 +1,11 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
 import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
 import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
 import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
+import LogoStrapi from '/public/images/logos/icon-strapi.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
 
 import LogoW3YZ from '/public/images/logos/w3yz_logo.jpeg';
@@ -13,6 +14,8 @@ import LogoRikaSoft from '/public/images/logos/rikasoft-logo.jpeg';
 
 import ProjectPrelogos from '/public/images/project-prelogos.png';
 import ProjectAhmetDilber from '/public/images/project-ahmetdilber.png';
+import ProjectW3YZ from '/public/images/project-w3yz.png';
+import ProjectMuhammetDilber from '/public/images/project-muhammetdilber.png';
 
 import {
   ExperienceDetails,
@@ -22,6 +25,7 @@ import {
 
 export const EXTERNAL_LINKS = {
   GITHUB: 'https://github.com/hesenaliyev14',
+  LINKEDIN: 'https://www.linkedin.com/in/hesenaliyev/',
 };
 
 export const NAV_LINKS = [
@@ -43,6 +47,10 @@ export const SOCIAL_LINKS = [
   {
     icon: Github,
     url: 'https://github.com/hesenaliyev14',
+  },
+  {
+    icon: Linkedin,
+    url: 'https://www.linkedin.com/in/hesenaliyev/',
   },
 ];
 
@@ -66,6 +74,11 @@ export const TECHNOLOGIES: TechDetails[] = [
     label: 'Next.js',
     logo: LogoNextjs,
     url: 'https://nextjs.org/',
+  },
+  {
+    label: 'Strapi',
+    logo: LogoStrapi,
+    url: 'https://strapi.io/',
   },
   {
     label: 'Tailwindcss',
@@ -114,6 +127,23 @@ export const EXPERIENCES: ExperienceDetails[] = [
 
 export const PROJECTS: ProjectDetails[] = [
   {
+    name: 'W3YZ',
+    description:
+      '',
+    url: 'https://w3yz.com/',
+    previewImage: ProjectW3YZ,
+    technologies: [
+      'NextJs',
+      'Typescript',
+      'Tailwind',
+      'Strapi',
+      'Tina',
+      'Shadcn',
+      'GraphQL',
+      'REST API'
+    ],
+  },
+  {
     name: 'Prelogos',
     description:
       '',
@@ -132,6 +162,19 @@ export const PROJECTS: ProjectDetails[] = [
       '',
     url: 'https://ahmetdilber.com/',
     previewImage: ProjectAhmetDilber,
+    technologies: [
+      'NextJs',
+      'Tailwind',
+      'Strapi',
+      'REST API'
+    ],
+  },
+  {
+    name: 'Dr. Muhammet Dilber',
+    description:
+      '',
+    url: 'https://muhammetdilber.com/',
+    previewImage: ProjectMuhammetDilber,
     technologies: [
       'NextJs',
       'Tailwind',
